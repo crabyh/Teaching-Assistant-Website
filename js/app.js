@@ -152,5 +152,6 @@ var App = function () {
 }();
 
 $(document).ready(function($) {
-            $("#include").load("header.html");
-        });
+    $("#include_teacher").load("header_teacher.html");
+    $("#include_student").load("header_student.html");
+});
