@@ -8,7 +8,7 @@
 <!--show a homework list for teacher -->
 
 <head>
-    <title>Submitted Homework</title>
+    <title>Check Homework</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="plugins/line-icons/line-icons.css">
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="plugins/image-hover/css/img-hover.css">
-    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
 
     <link rel="stylesheet" href="plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css">
 
@@ -203,281 +202,57 @@
 
 <!--=== Add new homework ===-->
 <div class="container content">
+    <form class="sky-form" id="new-homework" novalidate="novalidate" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <div class="row">
+                <section class="col col-6">
+                    <h1 class="headline-left">
+                        Group:《软件质量保证计划》
+                    </h1>
+                </section>
+            </div>
 
-<div class="panel panel-red margin-bottom-40">
-    <div class="panel-heading">
+            <div class="row">
+                <section class="col col-4" style="font-style: italic">
+                    Dead line : 2014/11/19 24:00
+                </section>
+            </div>
+            <div class="row">
+                <section class="col col-6">
+                    <p>
+                        软件质量保证（SQA-Software Quality Assurance）是建立一套有计划，有系统的方法，来向管理层保证拟定出的标
+                        准、步骤、实践和方法能够正确地被所有项目所采用。软件质量保证的目的是使软件过程对于管理人员来说是可见的。它
+                        通过对软件产品和活动进行评审和审计来验证软件是合乎标准的。软件质量保证组在项目开始时就一起参与建立计划、标
+                        准和过程。这些将使软件项目满足机构方针的要求。
+                    </p>
+                    <a href="no_where"  style="color: #ff0000">附件：《软件质量保证文档模版》</a>
+                </section>
+            </div>
 
-        <h3 class="panel-little">
-            unchecked
-        </h3>
+            <div class="row">
+                <section class="col col-8">
 
-    </div>
-    <div class="panel-body">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>#</th>
-                <th>Student-ID</th>
-                <th>Name</th>
-                <th>Submit Date</th>
-                <th>
+                    <label for="file" class="input input-file state-success">
+                        <div class="button">
+                            <input name="homework" multiple="" onchange="this.parentNode.nextSibling.value=this.value" type="file"/>
+                            Browse
+                        </div>
+                        <input placeholder="Homework File" readonly type="text"/>
+                    </label>
 
-                </th>
-            </tr>
-            </thead>
-            <tr>
-                <th>1</th>
-                <th>3120103557</th>
-                <th>李一萌</th>
-                <th>11/20</th>
-                <th>
-                    <div style="text-align: right">
-                        <button class="btn btn-info btn-xs">
-                            <i class="fa fa-eye"></i>
-                            view
-                        </button>
+                </section>
+            </div>
 
-                        <button class="btn btn-danger btn-xs" onclick="window.location.href='hw_check.html'">
-                            <i class="fa fa-pencil"></i>
-                            check
-                        </button>
 
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>2</th>
-                <th>3120103558</th>
-                <th>李二萌</th>
-                <th>11/20</th>
-                <th>
-                    <div style="text-align: right">
-                        <button class="btn btn-info btn-xs">
-                            <i class="fa fa-eye"></i>
-                            view
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            check
-                        </button>
+        </fieldset>
 
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>3</th>
-                <th>3120103559</th>
-                <th>李三萌</th>
-                <th>11/21</th>
-                <th>
-                    <div style="text-align: right">
-                        <button class="btn btn-info btn-xs">
-                            <i class="fa fa-eye"></i>
-                            view
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            check
-                        </button>
+        <footer>
+            <button type="submit" class="btn-u">Submit</button>
+            <div class="progress"></div>
+        </footer>
 
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>4</th>
-                <th>3120103560</th>
-                <th>李十萌</th>
-                <th>11/22</th>
-                <th>
-                    <div style="text-align: right">
-                        <button class="btn btn-info btn-xs">
-                            <i class="fa fa-eye"></i>
-                            view
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            check
-                        </button>
 
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>5</th>
-                <th>3120103561</th>
-                <th>李超萌</th>
-                <th>11/23</th>
-                <th>
-                    <div style="text-align: right">
-                        <button class="btn btn-info btn-xs">
-                            <i class="fa fa-eye"></i>
-                            view
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            check
-                        </button>
-
-                    </div>
-                </th>
-            </tr>
-        </table>
-        <div class="text-center">
-            <ul class="pagination">
-                <li><a href="#"><<</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">>></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div class="panel panel-green margin-bottom-40">
-    <div class="panel-heading">
-        <h3 class="panel-little">
-            checked
-        </h3>
-    </div>
-    <div class="panel-body">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>#</th>
-                <th>Student-ID</th>
-                <th>Name</th>
-                <th>Submit Date</th>
-                <th>Grade</th>
-                <th></th>
-            </tr>
-            </thead>
-            <tr>
-                <th>1</th>
-                <th>3120103557</th>
-                <th>李一萌</th>
-                <th>11/20</th>
-                <th style="color: #ff0000">95</th>
-                <th>
-                    <div style="text-align: right">
-
-                        <button class="btn btn-warning btn-xs">
-                            <i class="fa fa-comment"></i>
-                            comment
-                        </button>
-
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            Edit
-                        </button>
-                    </div>
-
-                </th>
-            </tr>
-            <tr>
-                <th>2</th>
-                <th>3120103558</th>
-                <th>李二萌</th>
-                <th>11/20</th>
-                <th>87</th>
-                <th>
-
-                    <div style="text-align: right">
-
-                        <button class="btn btn-warning btn-xs">
-                            <i class="fa fa-comment"></i>
-                            comment
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            Edit
-                        </button>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>3</th>
-                <th>3120103559</th>
-                <th>李三萌</th>
-                <th>11/21</th>
-                <th>75</th>
-
-                <th>
-
-                    <div style="text-align: right">
-
-                        <button class="btn btn-warning btn-xs">
-                            <i class="fa fa-comment"></i>
-                            comment
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            Edit
-                        </button>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>4</th>
-                <th>3120103560</th>
-                <th>李十萌</th>
-                <th>11/22</th>
-                <th style="color: #ff0000">91</th>
-
-                <th>
-
-                    <div style="text-align: right">
-
-                        <button class="btn btn-warning btn-xs">
-                            <i class="fa fa-comment"></i>
-                            comment
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            Edit
-                        </button>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>5</th>
-                <th>3120103561</th>
-                <th>李超萌</th>
-                <th>11/23</th>
-                <th>80</th>
-
-                <th>
-
-                    <div style="text-align: right">
-
-                        <button class="btn btn-warning btn-xs">
-                            <i class="fa fa-comment"></i>
-                            comment
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            Edit
-                        </button>
-                    </div>
-                </th>
-            </tr>
-        </table>
-
-        <div class="text-center">
-            <ul class="pagination">
-                <li><a href="#"><<</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">>></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+    </form>
 </div>
 
 

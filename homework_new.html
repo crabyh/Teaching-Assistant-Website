@@ -8,7 +8,7 @@
 <!--show a homework list for teacher -->
 
 <head>
-    <title>Submitted Homework</title>
+    <title>New Homework</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="plugins/line-icons/line-icons.css">
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="plugins/image-hover/css/img-hover.css">
-    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css">
 
     <link rel="stylesheet" href="plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css">
 
@@ -184,300 +183,95 @@
         <h2>Discover the Companies You would love to Work for ...</h2>
     </div>
     <div class="job-img-inputs">
-        <!--<div class="container">-->
-        <!--<div class="row">-->
-        <!--<div class="col-sm-4">-->
-        <!--<button type="button" class="btn-u btn-block btn-u-blue">Fast Access 1</button>-->
-        <!--</div>-->
-        <!--<div class="col-sm-4">-->
-        <!--<button type="button" class="btn-u btn-block btn-u-green">Fast Access 2</button>-->
-        <!--</div>-->
-        <!--<div class="col-sm-4">-->
-        <!--<button type="button" class="btn-u btn-block btn-u-orange">Fast Access 3</button>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <button type="button" class="btn-u btn-block btn-u-blue">Fast Access 1</button>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn-u btn-block btn-u-green">Fast Access 2</button>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn-u btn-block btn-u-orange">Fast Access 3</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!--=== End Job Img ===-->
 
 <!--=== Add new homework ===-->
 <div class="container content">
+    <form class="sky-form" id="new-homework" novalidate="novalidate" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <div class="row">
+                <section class="col col-6">
+                    <label class="input">
+                        <input name="title" placeholder="Title" type="text"/>
+                    </label>
+                </section>
+            </div>
 
-<div class="panel panel-red margin-bottom-40">
-    <div class="panel-heading">
+            <div class="row">
+                <section class="col col-2">
+                    <label class="radio">Personal
+                        <input name="hw_kind_1" checked type="radio"/>
+                        <i class="rounded-x"></i>
+                    </label>
+                </section>
 
-        <h3 class="panel-little">
-            unchecked
-        </h3>
+                <section class="col col-2">
+                    <label class="radio">Group
+                        <input name="hw_kind_1" type="radio"/>
+                        <i class="rounded-x"></i>
+                    </label>
+                </section>
 
-    </div>
-    <div class="panel-body">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>#</th>
-                <th>Student-ID</th>
-                <th>Name</th>
-                <th>Submit Date</th>
-                <th>
+            </div>
 
-                </th>
-            </tr>
-            </thead>
-            <tr>
-                <th>1</th>
-                <th>3120103557</th>
-                <th>李一萌</th>
-                <th>11/20</th>
-                <th>
-                    <div style="text-align: right">
-                        <button class="btn btn-info btn-xs">
-                            <i class="fa fa-eye"></i>
-                            view
-                        </button>
+            <div class="row">
+                <section class="col col-4"><label class="input">
+                    <i class="icon-append fa fa-calendar"></i>
+                    <input name="start" id="start" placeholder="Start date" class="hasDatepicker" type="text"/>
+                </label>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col col-4">
+                    <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input name="finish" id="finish" placeholder="Finish date" class="hasDatepicker" type="text"/>
+                    </label>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col col-8">
 
-                        <button class="btn btn-danger btn-xs" onclick="window.location.href='hw_check.html'">
-                            <i class="fa fa-pencil"></i>
-                            check
-                        </button>
+                    <label for="file" class="input input-file state-success">
+                        <div class="button">
+                            <input name="attachment" multiple="" onchange="this.parentNode.nextSibling.value=this.value" type="file"/>
+                            Browse
+                        </div>
+                        <input placeholder="Attachment" readonly type="text"/>
+                    </label>
 
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>2</th>
-                <th>3120103558</th>
-                <th>李二萌</th>
-                <th>11/20</th>
-                <th>
-                    <div style="text-align: right">
-                        <button class="btn btn-info btn-xs">
-                            <i class="fa fa-eye"></i>
-                            view
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            check
-                        </button>
+                </section>
+            </div>
 
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>3</th>
-                <th>3120103559</th>
-                <th>李三萌</th>
-                <th>11/21</th>
-                <th>
-                    <div style="text-align: right">
-                        <button class="btn btn-info btn-xs">
-                            <i class="fa fa-eye"></i>
-                            view
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            check
-                        </button>
+            <div class="row">
+                <section class="col col-8">
+                    <label class="textarea">
+                        <i class="icon-append fa fa-comment"></i>
+                        <textarea placeholder="Write some information about this homework" name="hw_info" cols="30" rows="8"></textarea>
+                    </label>
+                </section>
+            </div>
+        </fieldset>
 
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>4</th>
-                <th>3120103560</th>
-                <th>李十萌</th>
-                <th>11/22</th>
-                <th>
-                    <div style="text-align: right">
-                        <button class="btn btn-info btn-xs">
-                            <i class="fa fa-eye"></i>
-                            view
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            check
-                        </button>
+        footer>button[type="submit" class="btn-u"]{Publi}
 
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>5</th>
-                <th>3120103561</th>
-                <th>李超萌</th>
-                <th>11/23</th>
-                <th>
-                    <div style="text-align: right">
-                        <button class="btn btn-info btn-xs">
-                            <i class="fa fa-eye"></i>
-                            view
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            check
-                        </button>
 
-                    </div>
-                </th>
-            </tr>
-        </table>
-        <div class="text-center">
-            <ul class="pagination">
-                <li><a href="#"><<</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">>></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div class="panel panel-green margin-bottom-40">
-    <div class="panel-heading">
-        <h3 class="panel-little">
-            checked
-        </h3>
-    </div>
-    <div class="panel-body">
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th>#</th>
-                <th>Student-ID</th>
-                <th>Name</th>
-                <th>Submit Date</th>
-                <th>Grade</th>
-                <th></th>
-            </tr>
-            </thead>
-            <tr>
-                <th>1</th>
-                <th>3120103557</th>
-                <th>李一萌</th>
-                <th>11/20</th>
-                <th style="color: #ff0000">95</th>
-                <th>
-                    <div style="text-align: right">
-
-                        <button class="btn btn-warning btn-xs">
-                            <i class="fa fa-comment"></i>
-                            comment
-                        </button>
-
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            Edit
-                        </button>
-                    </div>
-
-                </th>
-            </tr>
-            <tr>
-                <th>2</th>
-                <th>3120103558</th>
-                <th>李二萌</th>
-                <th>11/20</th>
-                <th>87</th>
-                <th>
-
-                    <div style="text-align: right">
-
-                        <button class="btn btn-warning btn-xs">
-                            <i class="fa fa-comment"></i>
-                            comment
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            Edit
-                        </button>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>3</th>
-                <th>3120103559</th>
-                <th>李三萌</th>
-                <th>11/21</th>
-                <th>75</th>
-
-                <th>
-
-                    <div style="text-align: right">
-
-                        <button class="btn btn-warning btn-xs">
-                            <i class="fa fa-comment"></i>
-                            comment
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            Edit
-                        </button>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>4</th>
-                <th>3120103560</th>
-                <th>李十萌</th>
-                <th>11/22</th>
-                <th style="color: #ff0000">91</th>
-
-                <th>
-
-                    <div style="text-align: right">
-
-                        <button class="btn btn-warning btn-xs">
-                            <i class="fa fa-comment"></i>
-                            comment
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            Edit
-                        </button>
-                    </div>
-                </th>
-            </tr>
-            <tr>
-                <th>5</th>
-                <th>3120103561</th>
-                <th>李超萌</th>
-                <th>11/23</th>
-                <th>80</th>
-
-                <th>
-
-                    <div style="text-align: right">
-
-                        <button class="btn btn-warning btn-xs">
-                            <i class="fa fa-comment"></i>
-                            comment
-                        </button>
-                        <button class="btn btn-danger btn-xs">
-                            <i class="fa fa-pencil"></i>
-                            Edit
-                        </button>
-                    </div>
-                </th>
-            </tr>
-        </table>
-
-        <div class="text-center">
-            <ul class="pagination">
-                <li><a href="#"><<</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">>></a></li>
-            </ul>
-        </div>
-    </div>
-</div>
+    </form>
 </div>
 
 
