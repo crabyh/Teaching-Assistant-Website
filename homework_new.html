@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<!--Author Aquaird -->
+<!--2014.12.18 -->
+<!--show a homework list for teacher -->
+
+<head>
+    <title>New Homework</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pages/profile.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.css">
+    <link rel="stylesheet" href="plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/image-hover/css/img-hover.css">
+
+    <link rel="stylesheet" href="plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css">
+
+    <!-- CSS Page Style -->
+    <link rel="stylesheet" href="css/pages/page_job.css">
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="css/theme-colors/default.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+
+</head>
+
+<body>
+
+
+<div class="wrapper">
+<!--=== Header ===-->
+<div class="header">
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <!-- Topbar Navigation -->
+            <ul class="loginbar pull-right">
+                <li class="languagesSelector">
+                    <i class="fa fa-globe"></i>
+                    <a>Languages</a>
+                    <ul class="languages">
+                        <li class="active">
+                            <a href="#">English <i class="fa fa-check"></i></a>
+                        </li>
+                        <li><a href="#">Chinese</a></li>
+                    </ul>
+                </li>
+                <li class="topbar-devider"></li>
+                <li><a href="page_faq.html">Help</a></li>
+                <li class="topbar-devider"></li>
+                <li><a href="page_login.html">Login</a></li>
+            </ul>
+            <!-- End Topbar Navigation -->
+        </div>
+    </div>
+    <!-- End Topbar -->
+
+    <!-- Navbar -->
+    <div class="navbar navbar-default mega-menu" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bars"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img id="logo-header" src="img/logo1-default.png" alt="Logo">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Home -->
+                    <li class="active">
+                        <a href="index.php" class="dropdown-toggle" data-toggle="dropdown">
+                            Home
+                        </a>
+                    </li>
+                    <!-- End Home -->
+
+                    <!-- Profile -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            Profile
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="profile.html">Edit Profile</a></li>
+                            <li><a href="password_change.html">Change Password</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Profile -->
+
+                    <!-- Homework -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            Homework
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="homework_teacher.html">Homework List</a></li>
+                            <li><a href="homework_new.html">Publish Homework</a></li>
+                            <li><a href="group_management.html">Group</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Homework -->
+
+                    <!-- Grades -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            Grades
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="homework_new.html">Grades</a></li>
+                            <li><a href="homework_teacher.html">Class Performance</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Grades -->
+
+                    <!-- Resourses -->
+                    <li class="">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            Resourses
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="resourse_teacher.html">Resourses</a></li>
+                            <li><a href="resourse_new.html">Add a Resourse</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Resourses -->
+
+                    <!-- Forum -->
+                    <li class="">
+                        <a href="forum_index.php" class="dropdown-toggle" data-toggle="dropdown">
+                            Forum
+                        </a>
+                    </li>
+                    <!-- End Forum -->
+
+                    <!-- Mailbox -->
+                    <li class="">
+                        <a href="mailbox.php" class="dropdown-toggle" data-toggle="dropdown">
+                            mailbox
+                            <i class="fa fa-twitch"></i>
+                        </a>
+                    </li>
+                    <!-- End Mailbox -->
+
+
+
+                </ul>
+            </div><!--/navbar-collapse-->
+        </div>
+    </div>
+    <!-- End Navbar -->
+</div>
+<!--=== End Header ===-->
+
+<!--=== Job Img ===-->
+<div class="job-img margin-bottom-30">
+    <div class="job-banner">
+        <h2>Discover the Companies You would love to Work for ...</h2>
+    </div>
+    <div class="job-img-inputs">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <button type="button" class="btn-u btn-block btn-u-blue">Fast Access 1</button>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn-u btn-block btn-u-green">Fast Access 2</button>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn-u btn-block btn-u-orange">Fast Access 3</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--=== End Job Img ===-->
+
+<!--=== Add new homework ===-->
+<div class="container content">
+    <form class="sky-form" id="new-homework" novalidate="novalidate" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <div class="row">
+                <section class="col col-6">
+                    <label class="input">
+                        <input name="title" placeholder="Title" type="text"/>
+                    </label>
+                </section>
+            </div>
+
+            <div class="row">
+                <section class="col col-2">
+                    <label class="radio">Personal
+                        <input name="hw_kind_1" checked type="radio"/>
+                        <i class="rounded-x"></i>
+                    </label>
+                </section>
+
+                <section class="col col-2">
+                    <label class="radio">Group
+                        <input name="hw_kind_1" type="radio"/>
+                        <i class="rounded-x"></i>
+                    </label>
+                </section>
+
+            </div>
+
+            <div class="row">
+                <section class="col col-4"><label class="input">
+                    <i class="icon-append fa fa-calendar"></i>
+                    <input name="start" id="start" placeholder="Start date" class="hasDatepicker" type="text"/>
+                </label>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col col-4">
+                    <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input name="finish" id="finish" placeholder="Finish date" class="hasDatepicker" type="text"/>
+                    </label>
+                </section>
+            </div>
+            <div class="row">
+                <section class="col col-8">
+
+                    <label for="file" class="input input-file state-success">
+                        <div class="button">
+                            <input name="attachment" multiple="" onchange="this.parentNode.nextSibling.value=this.value" type="file"/>
+                            Browse
+                        </div>
+                        <input placeholder="Attachment" readonly type="text"/>
+                    </label>
+
+                </section>
+            </div>
+
+            <div class="row">
+                <section class="col col-8">
+                    <label class="textarea">
+                        <i class="icon-append fa fa-comment"></i>
+                        <textarea placeholder="Write some information about this homework" name="hw_info" cols="30" rows="8"></textarea>
+                    </label>
+                </section>
+            </div>
+        </fieldset>
+
+        footer>button[type="submit" class="btn-u"]{Publi}
+
+
+    </form>
+</div>
+
+
+
+<!--=== Footer Version 3 ===-->
+<div class="footer-v3">
+
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        2014 &copy; All Rights Reserved. Teaching Assistant Website By
+                        <a target="#" href="https://twitter.com/htmlstream">5%</a> Terms of Service</a>
+                    </p>
+                </div>
+                <!-- Social Links -->
+                <div class="col-md-6">
+                    <ul class="social-icons pull-right">
+                        <li><a href="#" data-original-title="Facebook" class="rounded-x social_facebook"></a></li>
+                        <li><a href="#" data-original-title="Twitter" class="rounded-x social_twitter"></a></li>
+                        <li><a href="#" data-original-title="Goole Plus" class="rounded-x social_googleplus"></a></li>
+                        <li><a href="#" data-original-title="Linkedin" class="rounded-x social_linkedin"></a></li>
+                        <li><a href="#" data-original-title="Pinterest" class="rounded-x social_pintrest"></a></li>
+                    </ul>
+                </div>
+                <!-- End Social Links -->
+            </div>
+        </div>
+        <!--/copyright-->
+    </div>
+</div>
+<!--=== End Footer Version 3 ===-->
+</div><!--/End Wrapepr-->
+
+
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="plugins/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="plugins/back-to-top.js"></script>
+<script type="text/javascript" src="plugins/jquery.parallax.js"></script>
+<script type="text/javascript" src="plugins/image-hover/js/modernizr.js"></script>
+<script type="text/javascript" src="plugins/image-hover/js/touch.js"></script>
+<script src="plugins/sky-forms/version-2.0.1/js/jquery-ui.min.js"></script>
+<!-- JS Customization -->
+<script type="text/javascript" src="js/custom.js"></script>
+<!-- JS Page Level -->
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        App.initParallaxBg();
+    });
+</script>
+<!--[if lt IE 9]>
+<script src="plugins/respond.js"></script>
+<script src="plugins/html5shiv.js"></script>
+<script src="js/plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
+
+</body>
+</html>
