@@ -2,13 +2,8 @@
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
-
-<!--Author Aquaird -->
-<!--2014.12.18 -->
-<!--show a homework list for teacher -->
-
 <head>
-    <title>New Homework</title>
+    <title>Teaching Assistant Website by 5%</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -21,7 +16,6 @@
 
     <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/pages/profile.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- CSS Implementing Plugins -->
@@ -29,8 +23,9 @@
     <link rel="stylesheet" href="plugins/line-icons/line-icons.css">
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="plugins/image-hover/css/img-hover.css">
-
     <link rel="stylesheet" href="plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css">
+    <link rel="stylesheet" href="css/plugins/brand-buttons/brand-buttons.css">
+    <link rel="stylesheet" href="css/plugins/brand-buttons/brand-buttons-inversed.css">
 
     <!-- CSS Page Style -->
     <link rel="stylesheet" href="css/pages/page_job.css">
@@ -40,14 +35,9 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="css/custom.css">
-
-
-
 </head>
 
 <body>
-
-
 <div class="wrapper">
 <!--=== Header ===-->
 <div class="header">
@@ -95,7 +85,7 @@
                 <ul class="nav navbar-nav">
                     <!-- Home -->
                     <li class="active">
-                        <a href="index.php" class="dropdown-toggle" data-toggle="dropdown">
+                        <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">
                             Home
                         </a>
                     </li>
@@ -113,46 +103,30 @@
                     </li>
                     <!-- End Profile -->
 
-                    <!-- Homework -->
+                    <!-- Homework And Grades -->
                     <li class="dropdown">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                            Homework
+                            Homeword
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="homework_teacher.html">Homework List</a></li>
-                            <li><a href="homework_new.html">Publish Homework</a></li>
-                            <li><a href="group_management.html">Group</a></li>
+                            <li><a href="homework_teacher.html">Homework</a></li>
+                            <li><a href="grades_student.html">Grades</a></li>
+                            <li><a href="group_apply.html">Group</a></li>
                         </ul>
                     </li>
-                    <!-- End Homework -->
-
-                    <!-- Grades -->
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                            Grades
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="homework_new.html">Grades</a></li>
-                            <li><a href="homework_teacher.html">Class Performance</a></li>
-                        </ul>
-                    </li>
-                    <!-- End Grades -->
+                    <!-- End Homework And Grades -->
 
                     <!-- Resourses -->
                     <li class="">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                            Resourses
+                        <a href="rescourse_list.html" class="dropdown-toggle" data-toggle="dropdown">
+                            Rescourses
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="resourse_teacher.html">Resourses</a></li>
-                            <li><a href="resourse_new.html">Add a Resourse</a></li>
-                        </ul>
                     </li>
                     <!-- End Resourses -->
 
                     <!-- Forum -->
                     <li class="">
-                        <a href="forum_index.php" class="dropdown-toggle" data-toggle="dropdown">
+                        <a href="forum_index.html" class="dropdown-toggle" data-toggle="dropdown">
                             Forum
                         </a>
                     </li>
@@ -160,7 +134,7 @@
 
                     <!-- Mailbox -->
                     <li class="">
-                        <a href="mailbox.php" class="dropdown-toggle" data-toggle="dropdown">
+                        <a href="mailbox.html" class="dropdown-toggle" data-toggle="dropdown">
                             mailbox
                             <i class="fa fa-twitch"></i>
                         </a>
@@ -180,6 +154,7 @@
 <!--=== Job Img ===-->
 <div class="job-img margin-bottom-30">
     <div class="job-banner">
+<<<<<<< HEAD:homework_new.html
         <h2>Discover the Companies You would love to Work for ...</h2>
     </div>
     <div class="job-img-inputs">
@@ -196,85 +171,153 @@
                 </div>
             </div>
         </div>
+=======
+        <h2>Next Monday,Room 501</h2>
+        <h2>Requirements change research!!!</h2>
+>>>>>>> d35a005aa6eb9edcb1e8a5a3635400b2f227d392:rescourse_list.html
     </div>
 </div>
 <!--=== End Job Img ===-->
 
-<!--=== Add new homework ===-->
+<!--=== Content Part ===-->
 <div class="container content">
-    <form class="sky-form" id="new-homework" novalidate="novalidate" method="post" enctype="multipart/form-data">
-        <fieldset>
-            <div class="row">
-                <section class="col col-6">
-                    <label class="input">
-                        <input name="title" placeholder="Title" type="text"/>
-                    </label>
-                </section>
+    <!-- Accordion v1 -->
+    <div class="panel-group acc-v1" id="accordion-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-One">
+                        doc1.doc
+                    </a>
+                </h4>
             </div>
-
-            <div class="row">
-                <section class="col col-2">
-                    <label class="radio">Personal
-                        <input name="hw_kind_1" checked type="radio"/>
-                        <i class="rounded-x"></i>
-                    </label>
-                </section>
-
-                <section class="col col-2">
-                    <label class="radio">Group
-                        <input name="hw_kind_1" type="radio"/>
-                        <i class="rounded-x"></i>
-                    </label>
-                </section>
-
-            </div>
-
-            <div class="row">
-                <section class="col col-4"><label class="input">
-                    <i class="icon-append fa fa-calendar"></i>
-                    <input name="start" id="start" placeholder="Start date" class="hasDatepicker" type="text"/>
-                </label>
-                </section>
-                </div>
-            <div class="row">
-                <section class="col col-4">
-                    <label class="input">
-                        <i class="icon-append fa fa-calendar"></i>
-                        <input name="finish" id="finish" placeholder="Finish date" class="hasDatepicker" type="text"/>
-                    </label>
-                </section>
-            </div>
-            <div class="row">
-                <section class="col col-8">
-
-                    <label for="file" class="input input-file state-success">
-                        <div class="button">
-                            <input name="attachment" multiple="" onchange="this.parentNode.nextSibling.value=this.value" type="file"/>
-                            Browse
+            <div id="collapse-One" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>description to this doc,including the aim,a brief introduction to the content and so on.</p>
+                            <div style="float: right">
+                                <button class="btn-u btn-brd rounded btn-u-dark btn-u-xs" type="button"><span class="glyphicon glyphicon-download"></span></button>
+                            </div>
                         </div>
-                        <input placeholder="Attachment" readonly type="text"/>
-                    </label>
-
-                </section>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div class="row">
-                <section class="col col-8">
-                    <label class="textarea">
-                        <i class="icon-append fa fa-comment"></i>
-                        <textarea placeholder="Write some information about this homework" name="hw_info" cols="30" rows="8"></textarea>
-                    </label>
-                </section>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Two">
+                        doc2.doc
+                    </a>
+                </h4>
             </div>
-        </fieldset>
+            <div id="collapse-Two" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>description to this doc,including the aim,a brief introduction to the content and so on.</p>
+                            <div style="float: right">
+                                <button class="btn-u btn-brd rounded btn-u-dark btn-u-xs" type="button"><span class="glyphicon glyphicon-download"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Three">
+                        ppt1.ppt
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse-Three" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>description to this ppt,including the aim,a brief introduction to the content and so on.</p>
+                            <div style="float: right">
+                                <button class="btn-u btn-brd rounded btn-u-dark btn-u-xs" type="button"><span class="glyphicon glyphicon-download"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Four">
+                        ppt2.ppt
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse-Four" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>description to this ppt,including the aim,a brief introduction to the content and so on.</p>
+                            <div style="float: right">
+                                <button class="btn-u btn-brd rounded btn-u-dark btn-u-xs" type="button"><span class="glyphicon glyphicon-download"></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Five">
+                        pdf1.ppt
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse-Five" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>description to this pdf,including the aim,a brief introduction to the content and so on</p>
+                    <div style="float: right">
+                        <button class="btn-u btn-brd rounded btn-u-dark btn-u-xs" type="button"><span class="glyphicon glyphicon-download"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<<<<<<< HEAD:homework_new.html
         footer>button[type="submit" class="btn-u"]{Publi}
+=======
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-1" href="#collapse-Six">
+                        pdf2.pdf
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse-Six" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p>description to this pdf,including the aim,a brief introduction to the content and so on.</p>
+                    <div style="float: right">
+                        <button class="btn-u btn-brd rounded btn-u-dark btn-u-xs" type="button"><span class="glyphicon glyphicon-download"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+>>>>>>> d35a005aa6eb9edcb1e8a5a3635400b2f227d392:rescourse_list.html
 
+    </div>
+    <!-- End Accordion v1 -->
 
-    </form>
 </div>
+<!--=== End Content Part ===-->
 
-
+<!--=== Teacher Intro ===-->
 
 <!--=== Footer Version 3 ===-->
 <div class="footer-v3">
@@ -301,13 +344,10 @@
                 <!-- End Social Links -->
             </div>
         </div>
-        <!--/copyright-->
-    </div>
+    </div><!--/copyright-->
 </div>
 <!--=== End Footer Version 3 ===-->
 </div><!--/End Wrapepr-->
-
-
 
 <!-- JS Global Compulsory -->
 <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
@@ -318,7 +358,6 @@
 <script type="text/javascript" src="plugins/jquery.parallax.js"></script>
 <script type="text/javascript" src="plugins/image-hover/js/modernizr.js"></script>
 <script type="text/javascript" src="plugins/image-hover/js/touch.js"></script>
-<script src="plugins/sky-forms/version-2.0.1/js/jquery-ui.min.js"></script>
 <!-- JS Customization -->
 <script type="text/javascript" src="js/custom.js"></script>
 <!-- JS Page Level -->

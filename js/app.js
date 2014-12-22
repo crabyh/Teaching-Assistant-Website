@@ -150,3 +150,7 @@ var App = function () {
     };
 
 }();
+
+$(document).ready(function($) {
+            $("#include").load("header.html");
+        });
