@@ -8,7 +8,7 @@
 <!--show a homework list for teacher -->
 
 <head>
-    <title>Homework Lists</title>
+    <title>New Homework</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -21,7 +21,7 @@
 
     <!-- CSS Global Compulsory -->
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/pages/feature_timeline2.css">
+    <link rel="stylesheet" href="css/pages/profile.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- CSS Implementing Plugins -->
@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="plugins/line-icons/line-icons.css">
     <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="plugins/image-hover/css/img-hover.css">
+
+    <link rel="stylesheet" href="plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css">
 
     <!-- CSS Page Style -->
     <link rel="stylesheet" href="css/pages/page_job.css">
@@ -38,9 +40,13 @@
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="css/custom.css">
+
+
+
 </head>
 
 <body>
+
 
 <div class="wrapper">
 <!--=== Header ===-->
@@ -193,117 +199,85 @@
     </div>
 </div>
 <!--=== End Job Img ===-->
-<!--=== Content ===-->
+
+<!--=== Add new homework ===-->
 <div class="container content">
+    <form class="sky-form" id="new-homework" novalidate="novalidate" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <div class="row">
+                <section class="col col-6">
+                    <label class="input">
+                        <input name="title" placeholder="Title" type="text"/>
+                    </label>
+                </section>
+            </div>
 
-    <!--=== Homework List===-->
-    <ul class="timeline-v2">
-        <li>
-            <time class="cbp_tmtime" datetime><span>11.12</span><span>Lesson_1</span></time>
-            <i class="cbp_tmicon rounded-x hidden-xs"></i>
+            <div class="row">
+                <section class="col col-2">
+                    <label class="radio">Personal
+                        <input name="hw_kind_1" checked type="radio"/>
+                        <i class="rounded-x"></i>
+                    </label>
+                </section>
 
-            <div class="cbp_tmlabel">
-                <h2  class="col col-6" style="color: #ff0000">
-                    《软件需求文档初步》
-                </h2>
-
-               <div style="text-align: left; color: #ff0000; font-style: italic">
-                    DDL: 2014.11.19
-                </div>
-                <br>
-
-                <p  style="color: #ff0000">
-                            开发软件系统最为困难的部分就是要准确说明开发什么。最为困难的概念性工作便是要编写出详细的技术需求，
-                    这包括所有面向用户、面向机器和其它软件系统的接口。如果做错，这将是会最终给系统带来极大损害的一部分，并且以
-                    后再对它进行修改也极为困难。目前，国内产品的庞杂，一家企业可能有几个系统并立运行，它们之间的接口是系统开发
-                    人员最头痛的问题。对于商业最终用户应用程序，企业信息系统和软件作为一个大系统的一部分的产品是显而易见的。
-
-                </p>
-                <a href="no_where"  style="color: #ff0000">附件：《软件需求文档模版》</a>
+                <section class="col col-2">
+                    <label class="radio">Group
+                        <input name="hw_kind_1" type="radio"/>
+                        <i class="rounded-x"></i>
+                    </label>
+                </section>
 
             </div>
-        </li>
-        <li>
-            <time class="cbp_tmtime" datetime=""><span>11.19</span><span>Lesson_2</span></time>
-            <i class="cbp_tmicon rounded-x hidden-xs"></i>
 
-            <div class="cbp_tmlabel">
-                <h2><a href="hw_detail.html">《软件质量保证计划》</a></h2>
-                <div style="text-align: left; color: #000000; font-style: italic">
-                    DDL: 2014.11.26
+            <div class="row">
+                <section class="col col-4"><label class="input">
+                    <i class="icon-append fa fa-calendar"></i>
+                    <input name="start" id="start" placeholder="Start date" class="hasDatepicker" type="text"/>
+                </label>
+                </section>
                 </div>
-                <br>
-                <p>软件质量保证（SQA-Software Quality Assurance）是建立一套有计划，有系统的方法，来向管理层保证拟定出的标
-                    准、步骤、实践和方法能够正确地被所有项目所采用。软件质量保证的目的是使软件过程对于管理人员来说是可见的。它
-                    通过对软件产品和活动进行评审和审计来验证软件是合乎标准的。软件质量保证组在项目开始时就一起参与建立计划、标
-                    准和过程。这些将使软件项目满足机构方针的要求。</p>
-
-                <br>
-                <div style="text-align: right">
-                    <button class="btn-u btn-u-blue" type="button"><span class="glyphicon glyphicon-pencil"></span></button>
-                    <button class="btn-u btn-u-red" type="button"><span class="glyphicon glyphicon-remove"></span></button>
-                    <button class="btn-u btn-u-yellow" type="button"><span class="glyphicon glyphicon-download"></span></button>
-
-                </div>
+            <div class="row">
+                <section class="col col-4">
+                    <label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input name="finish" id="finish" placeholder="Finish date" class="hasDatepicker" type="text"/>
+                    </label>
+                </section>
             </div>
-        </li>
-        <li>
-            <time class="cbp_tmtime" datetime=""><span>11.26</span><span>Lesson_3</span></time>
-            <i class="cbp_tmicon rounded-x hidden-xs"></i>
+            <div class="row">
+                <section class="col col-8">
 
-            <div class="cbp_tmlabel">
-                <h2>《SRS》</h2>
+                    <label for="file" class="input input-file state-success">
+                        <div class="button">
+                            <input name="attachment" multiple="" onchange="this.parentNode.nextSibling.value=this.value" type="file"/>
+                            Browse
+                        </div>
+                        <input placeholder="Attachment" readonly type="text"/>
+                    </label>
 
-                <p>这部分的分数是所有文档中最为重要的……</p>
-                <br>
-                <div style="text-align: right">
-                    <button class="btn-u btn-u-blue" type="button"><span class="glyphicon glyphicon-pencil"></span></button>
-                    <button class="btn-u btn-u-red" type="button"><span class="glyphicon glyphicon-remove"></span></button>
-                    <button class="btn-u btn-u-yellow" type="button"><span class="glyphicon glyphicon-download"></span></button>
-
-                </div>
+                </section>
             </div>
-        </li>
-        <li>
-            <time class="cbp_tmtime" datetime=""><span>12.3</span><span>Lesson_4</span></time>
-            <i class="cbp_tmicon rounded-x hidden-xs"></i>
 
-            <div class="cbp_tmlabel">
-                <h2>《软件变更计划》</h2>
-
-                <br>
-                <div style="text-align: right">
-                    <button class="btn-u btn-u-blue" type="button"><span class="glyphicon glyphicon-pencil"></span></button>
-                    <button class="btn-u btn-u-red" type="button"><span class="glyphicon glyphicon-remove"></span></button>
-                    <button class="btn-u btn-u-yellow" type="button"><span class="glyphicon glyphicon-download"></span></button>
-
-                </div>
+            <div class="row">
+                <section class="col col-8">
+                    <label class="textarea">
+                        <i class="icon-append fa fa-comment"></i>
+                        <textarea placeholder="Write some information about this homework" name="hw_info" cols="30" rows="8"></textarea>
+                    </label>
+                </section>
             </div>
-        </li>
-        <li>
-            <time class="cbp_tmtime" datetime=""><span>12.10</span><span>Lesson_5</span></time>
-            <i class="cbp_tmicon rounded-x hidden-xs"></i>
+        </fieldset>
 
-            <div class="cbp_tmlabel">
-                <h2>《展示PPT》</h2>
+        <footer>
+            <button type="submit" class="btn-u">Publish</button>
+            <div class="progress"></div>
+        </footer>
 
-                <p></p>
-                <br>
-                <div style="text-align: right">
-                    <button class="btn-u btn-u-blue" type="button"><span class="glyphicon glyphicon-pencil"></span></button>
-                    <button class="btn-u btn-u-red" type="button"><span class="glyphicon glyphicon-remove"></span></button>
-                    <button class="btn-u btn-u-yellow" type="button"><span class="glyphicon glyphicon-download"></span></button>
 
-                </div>
-            </div>
-        </li>
-    </ul>
-
-    <div style="text-align: right">
-        <button class="btn-u" type="button"><span class="glyphicon glyphicon-plus">添加作业</span></button>
-    </div>
-
+    </form>
 </div>
+
+
 
 <!--=== Footer Version 3 ===-->
 <div class="footer-v3">
@@ -330,10 +304,13 @@
                 <!-- End Social Links -->
             </div>
         </div>
-    </div><!--/copyright-->
+        <!--/copyright-->
+    </div>
 </div>
 <!--=== End Footer Version 3 ===-->
 </div><!--/End Wrapepr-->
+
+
 
 <!-- JS Global Compulsory -->
 <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
@@ -344,6 +321,7 @@
 <script type="text/javascript" src="plugins/jquery.parallax.js"></script>
 <script type="text/javascript" src="plugins/image-hover/js/modernizr.js"></script>
 <script type="text/javascript" src="plugins/image-hover/js/touch.js"></script>
+<script src="plugins/sky-forms/version-2.0.1/js/jquery-ui.min.js"></script>
 <!-- JS Customization -->
 <script type="text/javascript" src="js/custom.js"></script>
 <!-- JS Page Level -->
