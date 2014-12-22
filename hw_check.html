@@ -8,7 +8,7 @@
 <!--show a homework list for teacher -->
 
 <head>
-    <title>New Homework</title>
+    <title>Check Homework</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -183,19 +183,19 @@
         <h2>Discover the Companies You would love to Work for ...</h2>
     </div>
     <div class="job-img-inputs">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <button type="button" class="btn-u btn-block btn-u-blue">Fast Access 1</button>
-                </div>
-                <div class="col-sm-4">
-                    <button type="button" class="btn-u btn-block btn-u-green">Fast Access 2</button>
-                </div>
-                <div class="col-sm-4">
-                    <button type="button" class="btn-u btn-block btn-u-orange">Fast Access 3</button>
-                </div>
-            </div>
-        </div>
+        <!--<div class="container">-->
+        <!--<div class="row">-->
+        <!--<div class="col-sm-4">-->
+        <!--<button type="button" class="btn-u btn-block btn-u-blue">Fast Access 1</button>-->
+        <!--</div>-->
+        <!--<div class="col-sm-4">-->
+        <!--<button type="button" class="btn-u btn-block btn-u-green">Fast Access 2</button>-->
+        <!--</div>-->
+        <!--<div class="col-sm-4">-->
+        <!--<button type="button" class="btn-u btn-block btn-u-orange">Fast Access 3</button>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
     </div>
 </div>
 <!--=== End Job Img ===-->
@@ -206,55 +206,74 @@
         <fieldset>
             <div class="row">
                 <section class="col col-6">
+                    <h1 class="headline-left">
+                        Group:《软件质量保证计划》
+                    </h1>
+                </section>
+            </div>
+
+            <div class="row">
+                <section class="col col-4" style="font-style: italic">
+                    Submit time : 2014/11/19 16:42
+                </section>
+            </div>
+            <div class="row">
+                <section class="col col-6">
+                    <table class="table table-striped">
+                        <tr style="color: #ff0000">
+                            <th>组号</th>
+                            <th>第四组</th>
+                        </tr>
+
+                        <tr>
+                            <th>组长：</th>
+                            <th>包君泽</th>
+                        </tr>
+                        <tr>
+                            <th>组员：</th>
+                            <th>毛宇晗</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>王忆诗</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>李一萌</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>章栩倩</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th>李了</th>
+                        </tr>
+
+                    </table>
+                </section>
+
+            </div>
+
+
+            <div class="row">
+                <section class="col col-3">
+                    <a href="no_where"  style="color: #ff0000">文件：《第四组－软件质量保证文档》</a>
+                </section>
+
+                <section class="col ccol-1">
+                    <button class="btn btn-info btn-xs">
+                        <i class="fa fa-eye"></i>
+                        view
+                    </button>
+                </section>
+            </div>
+
+            <div class="row">
+                <section class="col col-1">
                     <label class="input">
-                        <input name="title" placeholder="Title" type="text"/>
+                        <input type="number" id="grade">
                     </label>
-                </section>
-            </div>
-
-            <div class="row">
-                <section class="col col-2">
-                    <label class="radio">Personal
-                        <input name="hw_kind_1" checked type="radio"/>
-                        <i class="rounded-x"></i>
-                    </label>
-                </section>
-
-                <section class="col col-2">
-                    <label class="radio">Group
-                        <input name="hw_kind_1" type="radio"/>
-                        <i class="rounded-x"></i>
-                    </label>
-                </section>
-
-            </div>
-
-            <div class="row">
-                <section class="col col-4"><label class="input">
-                    <i class="icon-append fa fa-calendar"></i>
-                    <input name="start" id="start" placeholder="Start date" class="hasDatepicker" type="text"/>
-                </label>
-                </section>
-                </div>
-            <div class="row">
-                <section class="col col-4">
-                    <label class="input">
-                        <i class="icon-append fa fa-calendar"></i>
-                        <input name="finish" id="finish" placeholder="Finish date" class="hasDatepicker" type="text"/>
-                    </label>
-                </section>
-            </div>
-            <div class="row">
-                <section class="col col-8">
-
-                    <label for="file" class="input input-file state-success">
-                        <div class="button">
-                            <input name="attachment" multiple="" onchange="this.parentNode.nextSibling.value=this.value" type="file"/>
-                            Browse
-                        </div>
-                        <input placeholder="Attachment" readonly type="text"/>
-                    </label>
-
                 </section>
             </div>
 
@@ -262,13 +281,16 @@
                 <section class="col col-8">
                     <label class="textarea">
                         <i class="icon-append fa fa-comment"></i>
-                        <textarea placeholder="Write some information about this homework" name="hw_info" cols="30" rows="8"></textarea>
+                        <textarea placeholder="Write some comments about this homework" name="hw_info" cols="30" rows="8"></textarea>
                     </label>
                 </section>
             </div>
         </fieldset>
 
-        footer>button[type="submit" class="btn-u"]{Publi}
+        <footer>
+            <button type="submit" class="btn-u">Submit</button>
+            <div class="progress"></div>
+        </footer>
 
 
     </form>

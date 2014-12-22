@@ -8,7 +8,7 @@
 <!--show a homework list for teacher -->
 
 <head>
-    <title>New Homework</title>
+    <title>Check Homework</title>
 
     <!-- Meta -->
     <meta charset="utf-8">
@@ -183,19 +183,19 @@
         <h2>Discover the Companies You would love to Work for ...</h2>
     </div>
     <div class="job-img-inputs">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <button type="button" class="btn-u btn-block btn-u-blue">Fast Access 1</button>
-                </div>
-                <div class="col-sm-4">
-                    <button type="button" class="btn-u btn-block btn-u-green">Fast Access 2</button>
-                </div>
-                <div class="col-sm-4">
-                    <button type="button" class="btn-u btn-block btn-u-orange">Fast Access 3</button>
-                </div>
-            </div>
-        </div>
+        <!--<div class="container">-->
+        <!--<div class="row">-->
+        <!--<div class="col-sm-4">-->
+        <!--<button type="button" class="btn-u btn-block btn-u-blue">Fast Access 1</button>-->
+        <!--</div>-->
+        <!--<div class="col-sm-4">-->
+        <!--<button type="button" class="btn-u btn-block btn-u-green">Fast Access 2</button>-->
+        <!--</div>-->
+        <!--<div class="col-sm-4">-->
+        <!--<button type="button" class="btn-u btn-block btn-u-orange">Fast Access 3</button>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
     </div>
 </div>
 <!--=== End Job Img ===-->
@@ -206,69 +206,50 @@
         <fieldset>
             <div class="row">
                 <section class="col col-6">
-                    <label class="input">
-                        <input name="title" placeholder="Title" type="text"/>
-                    </label>
+                    <h1 class="headline-left">
+                        Group:《软件质量保证计划》
+                    </h1>
                 </section>
             </div>
 
             <div class="row">
-                <section class="col col-2">
-                    <label class="radio">Personal
-                        <input name="hw_kind_1" checked type="radio"/>
-                        <i class="rounded-x"></i>
-                    </label>
-                </section>
-
-                <section class="col col-2">
-                    <label class="radio">Group
-                        <input name="hw_kind_1" type="radio"/>
-                        <i class="rounded-x"></i>
-                    </label>
-                </section>
-
-            </div>
-
-            <div class="row">
-                <section class="col col-4"><label class="input">
-                    <i class="icon-append fa fa-calendar"></i>
-                    <input name="start" id="start" placeholder="Start date" class="hasDatepicker" type="text"/>
-                </label>
-                </section>
-                </div>
-            <div class="row">
-                <section class="col col-4">
-                    <label class="input">
-                        <i class="icon-append fa fa-calendar"></i>
-                        <input name="finish" id="finish" placeholder="Finish date" class="hasDatepicker" type="text"/>
-                    </label>
+                <section class="col col-4" style="font-style: italic">
+                    Dead line : 2014/11/19 24:00
                 </section>
             </div>
+            <div class="row">
+                <section class="col col-6">
+                    <p>
+                        软件质量保证（SQA-Software Quality Assurance）是建立一套有计划，有系统的方法，来向管理层保证拟定出的标
+                        准、步骤、实践和方法能够正确地被所有项目所采用。软件质量保证的目的是使软件过程对于管理人员来说是可见的。它
+                        通过对软件产品和活动进行评审和审计来验证软件是合乎标准的。软件质量保证组在项目开始时就一起参与建立计划、标
+                        准和过程。这些将使软件项目满足机构方针的要求。
+                    </p>
+                    <a href="no_where"  style="color: #ff0000">附件：《软件质量保证文档模版》</a>
+                </section>
+            </div>
+
             <div class="row">
                 <section class="col col-8">
 
                     <label for="file" class="input input-file state-success">
                         <div class="button">
-                            <input name="attachment" multiple="" onchange="this.parentNode.nextSibling.value=this.value" type="file"/>
+                            <input name="homework" multiple="" onchange="this.parentNode.nextSibling.value=this.value" type="file"/>
                             Browse
                         </div>
-                        <input placeholder="Attachment" readonly type="text"/>
+                        <input placeholder="Homework File" readonly type="text"/>
                     </label>
 
                 </section>
             </div>
 
-            <div class="row">
-                <section class="col col-8">
-                    <label class="textarea">
-                        <i class="icon-append fa fa-comment"></i>
-                        <textarea placeholder="Write some information about this homework" name="hw_info" cols="30" rows="8"></textarea>
-                    </label>
-                </section>
-            </div>
+
         </fieldset>
 
-        footer>button[type="submit" class="btn-u"]{Publi}
+        <footer>
+            <button type="submit" class="btn-u">Submit</button>
+            <div class="progress"></div>
+        </footer>
 
 
     </form>
