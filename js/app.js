@@ -145,13 +145,13 @@ var App = function () {
                 jQuery('.parallaxBg').parallax("50%", 0.2);
                 jQuery('.parallaxBg1').parallax("50%", 0.4);
             });
-        },
-
+        }
     };
-
 }();
 
 $(document).ready(function($) {
     $("#include_teacher").load("header_teacher.html");
     $("#include_student").load("header_student.html");
+    $("#include_banner").load("banner.html");
+    $("#include_intro").load("introduction.html");
 });
