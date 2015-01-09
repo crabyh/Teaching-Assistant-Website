@@ -71,38 +71,51 @@
 <div class="container content">
 
     <!--=== Homework List===-->
+
+    <script>
+        function show() {
+            var tmp = window.open("about:blank", "", "fullscreen=1")
+            tmp.moveTo(100, 100)
+            tmp.resizeTo(600, 400)
+            tmp.focus()
+            tmp.location = "申诉小窗口.html"
+        }
+    </script>
+
     <ul class="timeline-v2">
         <li>
             <time class="cbp_tmtime" datetime><span>11.12</span><span>Lesson_1</span></time>
             <i class="cbp_tmicon rounded-x hidden-xs"></i>
 
             <div class="cbp_tmlabel">
-                <h2  class="col col-6" style="color: #ff0000">
+                <h2  class="col col-6">
                     《软件需求文档初步》
                 </h2>
 
-                <div style="text-align: left; color: #ff0000; font-style: italic">
+                <div style="text-align: left; font-style: italic; color: black" >
                     DDL: 2014.11.19
                 </div>
                 <br>
 
-                <p  style="color: #ff0000">
+                <p>
                     开发软件系统最为困难的部分就是要准确说明开发什么。最为困难的概念性工作便是要编写出详细的技术需求，
                     这包括所有面向用户、面向机器和其它软件系统的接口。如果做错，这将是会最终给系统带来极大损害的一部分，并且以
                     后再对它进行修改也极为困难。目前，国内产品的庞杂，一家企业可能有几个系统并立运行，它们之间的接口是系统开发
                     人员最头痛的问题。对于商业最终用户应用程序，企业信息系统和软件作为一个大系统的一部分的产品是显而易见的。
 
                 </p>
-                <a href="no_where"  style="color: #ff0000">附件：《软件需求文档模版》</a>
+                <a href="no_where">附件：《软件需求文档模版》</a>
 
                 <h2>
                 </h2>
                 <h2 style="color: #ff0000">
                     ［已批改：96］
                 </h2>
+                <div class="alert-dismissable fade in">
+                    <p>这位同的作业非常好，格式正确，图文并茂</p>
+                </div>
                 <div style="text-align: right">
-                    <button class="btn-u btn-u-green" type="button"><span class="glyphicon glyphicon-comment"></span> 评语</button>
-                    <button class="btn-u btn-u-red" type="button"><span class="glyphicon glyphicon-hand-up"></span> 申诉</button>
+                    <button class="btn-u btn-u-red" type="button" onclick="show()"><span class="glyphicon glyphicon-hand-up"></span> 申诉</button>
                 </div>
 
 
@@ -130,9 +143,9 @@
                     ［未批改］
                 </h2>
                 <br>
+                <p style="font-style: italic">2015年1月2日: 第三小组_《软件质量保证计划》_V1.0</p>
                 <div style="text-align: right">
-                    <button class="btn-u btn-u-blue" type="button"><span class="glyphicon glyphicon-upload"></span> 上传作业</button>
-                    <button class="btn-u btn-u-yellow" type="button"><span class="glyphicon glyphicon-download"></span> 下载已提交</button>
+                    <button class="btn-u btn-u-yellow" type="button" onclick="javascript:alert('下载成功')"><span class="glyphicon glyphicon-download"></span> 下载已提交</button>
                 </div>
 
 
@@ -153,8 +166,7 @@
                 </h2>
                 <br>
                 <div style="text-align: right">
-                    <button class="btn-u btn-u-blue" type="button"><span class="glyphicon glyphicon-upload"></span> 上传作业</button>
-                    <button class="btn-u btn-u-yellow" type="button"><span class="glyphicon glyphicon-download"></span> 下载已提交</button>
+                    <button class="btn-u btn-u-yellow" type="button" onclick="javascript:alert('下载成功')"><span class="glyphicon glyphicon-download"></span> 下载已提交</button>
                 </div>
             </div>
         </li>
@@ -172,8 +184,7 @@
                 </h2>
                 <br>
                 <div style="text-align: right">
-                    <button class="btn-u btn-u-light-grey" type="button"><span class="glyphicon glyphicon-upload"></span> 上传作业</button>
-                    <button class="btn-u btn-u-light-grey" type="button"><span class="glyphicon glyphicon-download"></span> 下载已提交</button>
+                    <button class="btn-u btn-u-light-grey" type="button" onclick="javascript:alert('下载成功')"><span class="glyphicon glyphicon-download"></span> 下载已提交</button>
                 </div>
             </div>
         </li>
@@ -192,8 +203,7 @@
                 </h2>
                 <br>
                 <div style="text-align: right">
-                    <button class="btn-u btn-u-light-grey" type="button"><span class="glyphicon glyphicon-upload"></span> 上传作业</button>
-                    <button class="btn-u btn-u-light-grey" type="button"><span class="glyphicon glyphicon-download"></span> 下载已提交</button>
+                    <button class="btn-u btn-u-light-grey" type="button" onclick="javascript:alert('下载成功')"><span class="glyphicon glyphicon-download"></span> 下载已提交</button>
                 </div>
             </div>
         </li>

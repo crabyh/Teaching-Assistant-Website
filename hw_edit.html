@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+
+<!--Author Aquaird -->
+<!--2014.12.18 -->
+<!--show a homework list for teacher -->
+
+<head>
+    <title>编辑作业信息</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/pages/profile.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="plugins/cube-portfolio/cubeportfolio/css/cubeportfolio.css">
+    <link rel="stylesheet" href="plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugins/image-hover/css/img-hover.css">
+
+    <link rel="stylesheet" href="plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css">
+
+    <!-- CSS Page Style -->
+    <link rel="stylesheet" href="css/pages/page_job.css">
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="css/theme-colors/default.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+
+</head>
+
+<body>
+
+
+<div class="wrapper">
+    <div id="include_teacher"></div>
+
+    <!--=== Job Img ===-->
+    <div class="job-img margin-bottom-30">
+        <div class="job-banner">
+            <h2>Discover the Companies You would love to Work for ...</h2>
+        </div>
+        <div class="job-img-inputs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <button type="button" class="btn-u btn-block btn-u-blue">Fast Access 1</button>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn-u btn-block btn-u-green">Fast Access 2</button>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn-u btn-block btn-u-orange">Fast Access 3</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=== End Job Img ===-->
+
+    <!--=== Add new homework ===-->
+    <div class="container content">
+        <form class="sky-form" id="new-homework" novalidate="novalidate" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <div class="row">
+                    <section class="col col-6">
+                        <label class="input">
+                            <input name="title" placeholder="《软件质量保证计划》" type="text"/>
+                        </label>
+                    </section>
+                </div>
+
+                <div class="row">
+                    <section class="col col-2">
+                        <label class="radio">Personal
+                            <input name="hw_kind_1" checked type="radio"/>
+                            <i class="rounded-x"></i>
+                        </label>
+                    </section>
+
+                    <section class="col col-2">
+                        <label class="radio">Group
+                            <input name="hw_kind_1" type="radio"/>
+                            <i class="rounded-x"></i>
+                        </label>
+                    </section>
+
+                </div>
+
+                <div class="row">
+                    <section class="col col-4"><label class="input">
+                        <i class="icon-append fa fa-calendar"></i>
+                        <input name="start" id="start" placeholder="2014/11/12" class="hasDatepicker" type="text"/>
+                    </label>
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="col col-4">
+                        <label class="input">
+                            <i class="icon-append fa fa-calendar"></i>
+                            <input name="finish" id="finish" placeholder="2014/11/19" class="hasDatepicker" type="text"/>
+                        </label>
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="col col-8">
+                        <a style="color: red">
+                            附件：《软件质量保证文档模版》
+                        </a>
+                        <button class="btn-u btn-u-red">删除</button>
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="col col-8">
+
+                        <label for="file" class="input input-file state-success">
+                            <div class="button">
+                                <input name="attachment" multiple="" onchange="this.parentNode.nextSibling.value=this.value" type="file"/>
+                                Browse
+                            </div>
+                            <input placeholder="Attachment" readonly type="text"/>
+                        </label>
+
+                    </section>
+                </div>
+
+                <div class="row">
+                    <section class="col col-8">
+                        <label class="textarea">
+                            <i class="icon-append fa fa-comment"></i>
+                            <textarea placeholder="软件质量保证（SQA-Software Quality Assurance）是建立一套有计划，有系统的方法，来向管理层保证拟定出的标 准、步骤、实践和方法能够正确地被所有项目所采用。软件质量保证的目的是使软件过程对于管理人员来说是可见的。它 通过对软件产品和活动进行评审和审计来验证软件是合乎标准的。软件质量保证组在项目开始时就一起参与建立计划、标 准和过程。这些将使软件项目满足机构方针的要求。 " name="hw_info" cols="30" rows="8"></textarea>
+                        </label>
+                    </section>
+                </div>
+            </fieldset>
+
+            <footer>
+                <button type="submit" class="btn-u">Publish</button>
+            </footer>
+
+
+        </form>
+    </div>
+
+
+
+    <!--=== Footer Version 3 ===-->
+    <div class="footer-v3">
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            2014 &copy; All Rights Reserved. Teaching Assistant Website By
+                            <a target="#" href="https://twitter.com/htmlstream">5%</a> Terms of Service</a>
+                        </p>
+                    </div>
+                    <!-- Social Links -->
+                    <div class="col-md-6">
+                        <ul class="social-icons pull-right">
+                            <li><a href="#" data-original-title="Facebook" class="rounded-x social_facebook"></a></li>
+                            <li><a href="#" data-original-title="Twitter" class="rounded-x social_twitter"></a></li>
+                            <li><a href="#" data-original-title="Goole Plus" class="rounded-x social_googleplus"></a></li>
+                            <li><a href="#" data-original-title="Linkedin" class="rounded-x social_linkedin"></a></li>
+                            <li><a href="#" data-original-title="Pinterest" class="rounded-x social_pintrest"></a></li>
+                        </ul>
+                    </div>
+                    <!-- End Social Links -->
+                </div>
+            </div>
+            <!--/copyright-->
+        </div>
+    </div>
+    <!--=== End Footer Version 3 ===-->
+</div><!--/End Wrapepr-->
+
+
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="plugins/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- JS Implementing Plugins -->
+<script type="text/javascript" src="plugins/back-to-top.js"></script>
+<script type="text/javascript" src="plugins/jquery.parallax.js"></script>
+<script type="text/javascript" src="plugins/image-hover/js/modernizr.js"></script>
+<script type="text/javascript" src="plugins/image-hover/js/touch.js"></script>
+<script src="plugins/sky-forms/version-2.0.1/js/jquery-ui.min.js"></script>
+<!-- JS Customization -->
+<script type="text/javascript" src="js/custom.js"></script>
+<!-- JS Page Level -->
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        App.initParallaxBg();
+    });
+</script>
+<!--[if lt IE 9]>
+<script src="plugins/respond.js"></script>
+<script src="plugins/html5shiv.js"></script>
+<script src="js/plugins/placeholder-IE-fixes.js"></script>
+<![endif]-->
+
+</body>
+</html>
