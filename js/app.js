@@ -152,6 +152,7 @@ var App = function () {
 $(document).ready(function($) {
     $("#include_teacher").load("header_teacher.html");
     $("#include_student").load("header_student.html");
-    $("#include_banner").load("banner.html");
+    $("#include_banner_student").load("banner_student.html");
+    $("#include_banner_teacher").load("banner_teacher.html");
     $("#include_intro").load("introduction.html");
 });
