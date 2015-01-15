@@ -192,10 +192,9 @@
     jQuery(document).ready(function() {
         App.init();
         App.initParallaxBg();   
-        var ref = top.document.referrer;
-        if (ref.indexOf("student.html") >= 0) {
-            $(".teacher").hide();
-        };
+        $(".btn-danger").click(function() {
+            $(this).parent().parent().remove();
+        });
     });
 </script>
 <!--[if lt IE 9]>

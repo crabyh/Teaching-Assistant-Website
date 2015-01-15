@@ -51,7 +51,7 @@
                         <a href="forum_newpost.html" type="button" class="btn-u btn-block btn-u-blue">发布新帖</a>
                     </div>
                     <div class="col-sm-4">
-                        <a href="forum_index.html" type="button" class="btn-u btn-block btn-u-green">论坛首页</a>
+                        <a href="forum_index_teacher.html" type="button" class="btn-u btn-block btn-u-green">论坛首页</a>
                     </div>
                     <div class="col-sm-4">
                         <a href="forum_essence.html" type="button" class="btn-u btn-block btn-u-orange">精华区</a>
@@ -183,7 +183,10 @@
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
-        App.initParallaxBg();      
+        App.initParallaxBg(); 
+        $(".btn-success").click(function() {
+            $(this).parent().parent().remove();
+        });     
     });
 </script>
 <!--[if lt IE 9]>
